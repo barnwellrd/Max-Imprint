@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2041
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MaxImprint", "MaxImprint\MaxImprint.vcxproj", "{688C5A66-3F74-45E8-8957-9C95DF727D84}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debugger|x64 = Debugger|x64
+		Debugger|x86 = Debugger|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{688C5A66-3F74-45E8-8957-9C95DF727D84}.Debugger|x64.ActiveCfg = Debugger|x64
+		{688C5A66-3F74-45E8-8957-9C95DF727D84}.Debugger|x64.Build.0 = Debugger|x64
+		{688C5A66-3F74-45E8-8957-9C95DF727D84}.Debugger|x86.ActiveCfg = Debugger|Win32
+		{688C5A66-3F74-45E8-8957-9C95DF727D84}.Debugger|x86.Build.0 = Debugger|Win32
+		{688C5A66-3F74-45E8-8957-9C95DF727D84}.Release|x64.ActiveCfg = Release|x64
+		{688C5A66-3F74-45E8-8957-9C95DF727D84}.Release|x64.Build.0 = Release|x64
+		{688C5A66-3F74-45E8-8957-9C95DF727D84}.Release|x86.ActiveCfg = Release|Win32
+		{688C5A66-3F74-45E8-8957-9C95DF727D84}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B9A8E495-E64A-43CF-B15A-5997616E96FA}
+	EndGlobalSection
+EndGlobal
