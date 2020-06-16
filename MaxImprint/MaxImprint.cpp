@@ -18,9 +18,7 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call, LPVOID lpReserv
 		Init();
 
 		// Timer to init Permission members array after Permission.dll has been loaded
-		API::Timer::Get().DelayExecute(&MI::LoadNppPermissionsArray, 60);
-		// Continuously update admins list
-		API::Timer::Get().RecurringExecute(&MI::LoadNppPermissionsArray, 30, -1, true);
+		API::Timer::Get().DelayExecute(&MI::RecurringLoadNppPermissionsArray, 30);
 		break;
 	case DLL_PROCESS_DETACH:
 		RemoveCommands();

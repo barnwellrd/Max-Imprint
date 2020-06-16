@@ -168,13 +168,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="MaxImprint.cpp" />
-    <ClCompile Include="sqlite3.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="json.hpp" />
     <ClInclude Include="MaxImprint.h" />
     <ClInclude Include="MaxImprintCommands.h" />
-    <ClInclude Include="sqlite3.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="PluginInfo.json" />

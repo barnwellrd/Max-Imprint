@@ -21,22 +21,22 @@ inline void MaxImprintCommand(AShooterPlayerController* player) {
 
 				dino->UpdateImprintingQuality(1.0);
 
-				ArkApi::GetApiUtils().SendNotification(player, FLinearColor(0.0f, 1.0f, 0.0f, 0.0f), 1.4f,
-					10.0f, nullptr, "Dino Max Imprinted!");
+				ArkApi::GetApiUtils().SendNotification(player, FLinearColor(0.0, 1.0, 0.0, 0.0), 1.4,
+					10.0, nullptr, "Dino Max Imprinted!");
 			}
 			else {
-				ArkApi::GetApiUtils().SendNotification(player, FLinearColor(1.0f, 0.0f, 0.0f, 0.0f), 1.4f,
-					10.0f, nullptr, "Dino is not a baby!");
+				ArkApi::GetApiUtils().SendNotification(player, FLinearColor(1.0, 0.0, 0.0, 0.0), 1.4,
+					10.0, nullptr, "Dino is not a baby!");
 			}
 		}
 		else {
-			ArkApi::GetApiUtils().SendNotification(player, FLinearColor(1.0f, 0.0f, 0.0f, 0.0f), 1.4f,
-				10.0f, nullptr, "Dino is not in your tribe!");
+			ArkApi::GetApiUtils().SendNotification(player, FLinearColor(1.0, 0.0, 0.0, 0.0), 1.4,
+				10.0, nullptr, "Dino is not in your tribe!");
 		}
 	}
 	else {
-		ArkApi::GetApiUtils().SendNotification(player, FLinearColor(1.0f, 0.0f, 0.0f, 0.0f), 1.4f,
-			10.0f, nullptr, "Invalid target!");
+		ArkApi::GetApiUtils().SendNotification(player, FLinearColor(1.0, 0.0, 0.0, 0.0), 1.4,
+			10.0, nullptr, "Invalid target!");
 	}
 }
 
@@ -50,13 +50,13 @@ inline void ChatCommand(AShooterPlayerController* player, FString* message, int 
 			MaxImprintCommand(player);
 		}
 		else {
-			ArkApi::GetApiUtils().SendNotification(player, FLinearColor(1.0f, 0.0f, 0.0f, 0.0f), 1.4f,
-				10.0f, nullptr, "Invalid chat command!");
+			ArkApi::GetApiUtils().SendNotification(player, FLinearColor(1.0, 0.0, 0.0, 0.0), 1.4,
+				10.0, nullptr, "Invalid chat command!");
 		}
 	}
 	else {
-		ArkApi::GetApiUtils().SendNotification(player, FLinearColor(1.0f, 0.0f, 0.0f, 0.0f), 1.4f,
-			10.0f, nullptr, "Invalid chat command!");
+		ArkApi::GetApiUtils().SendNotification(player, FLinearColor(1.0, 0.0, 0.0, 0.0), 1.4,
+			10.0, nullptr, "Invalid chat command!");
 	}
 }
 
