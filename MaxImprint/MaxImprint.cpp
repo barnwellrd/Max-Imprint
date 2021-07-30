@@ -2,13 +2,14 @@
 #include <Timer.h>
 #include "MaxImprint.h"
 #include "MaxImprintCommands.h"
+#include "MaxImprintConfig.h"
 
 #pragma comment(lib, "ArkApi.lib")
 #pragma comment(lib, "Permissions.lib")
 
 void Init() {
 	Log::Get().Init("MaxImprint");
-
+	InitConfig();
 	InitCommands();
 }
 
@@ -18,7 +19,7 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call, LPVOID lpReserv
 		Init();
 
 		// Timer to init Permission members array after Permission.dll has been loaded
-		API::Timer::Get().DelayExecute(&MI::RecurringLoadNppPermissionsArray, 30);
+		API::Timer::Get().DelayExecute(&MI::RecurringLoadPermissionsArray, 30);
 		break;
 	case DLL_PROCESS_DETACH:
 		RemoveCommands();

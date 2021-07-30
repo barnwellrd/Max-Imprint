@@ -17,6 +17,12 @@
     <ClInclude Include="MaxImprintCommands.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MaxImprintConfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MaxImprint.cpp">
@@ -27,5 +33,11 @@
     <None Include="PluginInfo.json">
       <Filter>Source Files</Filter>
     </None>
+    <None Include="config.json">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MaxImprint.rc" />
   </ItemGroup>
 </Project>

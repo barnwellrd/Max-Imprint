@@ -1,7 +1,7 @@
 {
   "FullName": "Max Imprint Plugin",
   "Description": "Gives baby dinos max imprinting with chat commands.",
-  "Version": 1.0,
-  "MinApiVersion": 3.4,
+  "Version": 1.1,
+  "MinApiVersion": 3.52,
   "ResourceId": 186
 }

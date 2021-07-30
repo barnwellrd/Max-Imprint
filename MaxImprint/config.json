@@ -1,0 +1,8 @@
+{
+  "General": {
+    "RequireGroupToImprint": false,
+    "AllowedGroup": "MaxImprintAllowed",
+    "AllowAdultImprinting": false,
+    "ImprintCommand": "/imprint"
+  }
+}
